@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* navbar code strt */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  margin-bottom: 5%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #0f57ff;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* navabar code end  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* content styling start  */
+
+/*  */
+
+/*  */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+#search-container {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #0b017a;
+  padding: 1em 0.3em;
+}
+
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #0f57ff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  border: 0;
+}
+#buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+
+.button-value {
+  border: 2px solid #0f57ff;
+  margin-top: 3px;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #6759ff;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #0f57ff;
+  color: #ffffff;
+}
+#products {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 7em;
+  padding: 2em 0;
+}
+.card {
+  background-color: #ffffff;
+  max-width: 20em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+
+.fa-amazon{
+  font-size: 30px;
+  color: #ffbf00;
+  filter: drop-shadow(2px 1px 0px #000000);
+}
+
+.fa-facebook-official{
+  font-size: 30px;
+  color: #fff81e;
+  background-color: #001aff;
+  border: 2px solid #252cff;
+  border-radius: 16px;
+  float: right;
+
+}
+
+@media screen and (max-width: 720px) {
+  #search-container input {
+    width: 90%;
+    margin-left: 6%;
+  }
+
+  #search-container button {
+    width: 30%;
+    margin-right: 6%;
+  }
+
+  #buttons {
+    display: block;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 25em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 6%;
+    margin: 10px 0px 0px 10px;
+  }
+}
+/*  */
+
+/*  */
+
+/* content styl end  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* footer start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  float: bottom;
+  background-color: #000000;
+  color: #fefefe;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 1%;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 3px solid #001aff;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#cprig {
+  padding-bottom: 4%;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+/* footer end */
+
+/* / */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* *************************************************************** */
+/* requiremnets
+it redirectes ti the site whree the product is available
+
+all the product and imagesd should be listed there
+they should be trendng and most buying
+
+this shows only iste which the product has
+
+if the product is avaibale only on the amazon then only link to amaozon and not on other webaites
+
+if avallable on various sites the link all the sites
+
+and updated regularly
+
+*/
+
+/*
+10 lord vishnu avatars
+MK VNV PR KBK
+matsya  kumar varaha  narasimha vamana parashurama ram  krishna buddha kalki */
